@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>雷速 · 知识入口</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f9fafc;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+      color: #1e2a3a;
+      line-height: 1.7;
+      padding: 2rem 1.2rem;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    /* ---- header / hero ---- */
+    .hero {
+      margin-bottom: 3rem;
+      padding: 2.5rem 0 1rem 0;
+      border-bottom: 1px solid #e6edf4;
+    }
+
+    .hero h1 {
+      font-size: 2.2rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      color: #0b1c2e;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero .sub {
+      font-size: 1rem;
+      color: #5e6f7e;
+      max-width: 550px;
+    }
+
+    /* ---- cards / sections ---- */
+    .section-title {
+      font-size: 1.1rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      color: #2c3d4f;
+      margin: 2.5rem 0 1rem 0;
+      padding-bottom: 0.4rem;
+      border-bottom: 2px solid #dce5ed;
+    }
+
+    .info-card {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 1.6rem 1.8rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 2px 8px rgba(0, 20, 40, 0.03);
+      transition: box-shadow 0.2s ease;
+    }
+
+    .info-card h3 {
+      font-size: 1rem;
+      font-weight: 500;
+      color: #1f3348;
+      margin-bottom: 0.5rem;
+    }
+
+    .info-card p,
+    .info-card li {
+      font-size: 0.95rem;
+      color: #2f4055;
+    }
+
+    .info-card ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .info-card li {
+      padding: 0.2rem 0;
+      position: relative;
+      padding-left: 1.2rem;
+    }
+
+    .info-card li::before {
+      content: "·";
+      position: absolute;
+      left: 0;
+      color: #7b94ad;
+      font-weight: bold;
+    }
+
+    /* hint / tip box */
+    .hint-box {
+      background: #f0f4fa;
+      border-left: 4px solid #8499b2;
+      border-radius: 0 12px 12px 0;
+      padding: 1.4rem 1.6rem;
+      margin: 1.8rem 0;
+    }
+
+    .hint-box p {
+      font-size: 0.95rem;
+      color: #1d3145;
+      margin-bottom: 0.3rem;
+    }
+
+    .hint-box .strong {
+      font-weight: 500;
+    }
+
+    /* inline link style */
+    a {
+      color: #1a5a8c;
+      text-decoration: none;
+      border-bottom: 1px dotted #b6cbd9;
+      transition: border-color 0.15s, color 0.15s;
+    }
+
+    a:hover {
+      color: #0d3b5e;
+      border-bottom-color: #1a5a8c;
+    }
+
+    /* faq snippet */
+    .faq-item {
+      padding: 0.8rem 0;
+      border-bottom: 1px solid #eef3f8;
+    }
+
+    .faq-item:last-child {
+      border-bottom: none;
+    }
+
+    .faq-q {
+      font-weight: 500;
+      color: #1f3348;
+      margin-bottom: 0.2rem;
+    }
+
+    .faq-a {
+      color: #3d5068;
+      font-size: 0.92rem;
+    }
+
+    /* tag / meta */
+    .meta-note {
+      font-size: 0.85rem;
+      color: #6c7f92;
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #dfe8f0;
+      text-align: left;
+    }
+
+    /* responsive */
+    @media (max-width: 500px) {
+      body {
+        padding: 1.5rem 1rem;
+      }
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+      .info-card {
+        padding: 1.2rem 1.2rem;
+      }
+      .hint-box {
+        padding: 1rem 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- hero -->
+    <div class="hero">
+      <h1>再次回到这里</h1>
+      <div class="sub">一个安静存放信息与索引的位置，适合时常留步。</div>
+    </div>
+
+    <!-- 目录感：说明区 -->
+    <div class="section-title">· 说明区</div>
+    <div class="info-card">
+      <h3>关于这一页</h3>
+      <p>这里并非全新开始，而是一个熟悉的落脚点。当你需要回顾某些内容、查找之前留意过的线索，或只是想确认自己是否仍记得路径，这里都可以提供帮助。</p>
+      <p style="margin-top: 0.6rem;">本站的内容围绕一个持续维护的知识结构展开，涉及分类、参考与更新记录。无论你是初次到访还是再次回来，都能快速找到方向。</p>
+    </div>
+
+    <!-- 提示区：收藏与回访 -->
+    <div class="section-title">· 提示区</div>
+    <div class="hint-box">
+      <p><span class="strong">如果你正在考虑收藏：</span></p>
+      <p>将当前地址存入书签或笔记中，可以为之后的访问节省时间。知识类的信息常常需要反复查阅，保存入口比依赖记忆更可靠。</p>
+      <p style="margin-top: 0.8rem;"><span class="strong">如果你已经收藏过：</span></p>
+      <p>不妨检查一下书签是否仍有效，偶尔清理和整理收藏夹，也有助于保持信息体系的清晰。页面结构可能随内容调整有所更新，但核心索引始终指向 <a href="https://intl-ssl-leisu.com">雷速</a> 所在的位置。</p>
+    </div>
+
+    <!-- 相关信息区 -->
+    <div class="section-title">· 相关信息区</div>
+    <div class="info-card">
+      <h3>常见索引分类</h3>
+      <ul>
+        <li>基础参考与术语说明</li>
+        <li>更新日志与变更记录</li>
+        <li>模块索引与关联资源</li>
+        <li>外部链接与原始出处</li>
+      </ul>
+    </div>
+
+    <div class="info-card">
+      <h3>使用建议</h3>
+      <p>建议优先浏览说明区的内容，再根据自身需求查看相关条目。如果遇到显示异常或链接失效，可以稍后再试，或通过已知的其他方式验证信息。</p>
+    </div>
+
+    <!-- FAQ 摘要 -->
+    <div class="section-title">· 常见疑问摘要</div>
+    <div class="faq-item">
+      <div class="faq-q">这个页面会频繁变化吗？</div>
+      <div class="faq-a">结构保持相对稳定，但内容会根据需要做补充或修订。重要变动会记录在更新日志中。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">如何确认自己使用的是最新版本？</div>
+      <div class="faq-a">对比页面底部的维护标记或参考说明区的最新修改日期。保持书签指向主地址即可。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">如果找不到之前看过的某条信息怎么办？</div>
+      <div class="faq-a">先检查分类索引，如果仍未找到，可能是内容已整合或移动。建议使用站内搜索功能（如有）或查阅最新说明。</div>
+    </div>
+
+    <!-- 自然嵌入链接的句子 -->
+    <p style="margin: 2rem 0 0.5rem 0; line-height: 1.8; color: #2f4055;">
+      若要直接前往知识库的主索引页，你可以通过已保存的书签，或在浏览器地址栏输入 <a href="https://intl-ssl-leisu.com">雷速</a> 对应的网址。建议在稳定网络环境下访问。
+    </p>
+
+    <!-- meta note -->
+    <div class="meta-note">
+      最后更新：2025 · 内容索引保持独立 · 建议定期回顾
+    </div>
+  </div>
+</body>
+</html>
